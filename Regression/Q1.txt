@@ -1,0 +1,12 @@
+# MachineLearning
+
+The attached the data file:  PDBbind2015_refined-core.dat is used this as training set
+Each file contains 7 columns:
+col1: experimental binding affinity (actual Y)
+col2: computational binding affinity (this is the value currently returned by the docking program, predicted Y . The biological group is now using this Y in their model. But they have found that this is not a good prediction as they are getting only 0.68 correlation coefficient between actual Y and predicted Y .  We need to give them some model which predict better than current prediction.)
+col3-7: the 5 features [please check if they are normalized or not.]
+
+Train a model with help of this data-set. Submit following
+1) your code for training [you may need to do data normalization, model selection, non-linear regression etc] [point 1]
+2) a short description how did you select your model. [points 2 ]
+3) a code for evaluating the performance of your model the test data written in the same format with file name "PDBbind2015_core.dat" [points 2 on your performance]
